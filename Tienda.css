@@ -1,0 +1,17 @@
+body{
+    background-image: url(imagenesTienda/OpcionFondo1.jpg);
+    background-size: cover;
+}
+#num1{
+    font-family:ONE-PIECE;
+    font-size: 3em;
+}
+@font-face {
+    font-family: 'ONE-PIECE';
+    src:url('ONE-PIECE.ttf.woff') format('woff'),
+        url('ONE-PIECE.ttf.svg#ONE-PIECE') format('svg'),
+        url('ONE-PIECE.ttf.eot'),
+        url('ONE-PIECE.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
