@@ -5,7 +5,7 @@
 let productos=[
     {nombre:"Funko pop luffy",
     precio:70000,
-    foto:'imgagenesTienda/Producto1.jpg',
+    foto:'imagenesTienda/Producto1.jpg',
     descripcion:"Figura de luffy en kimono"},
     {
     nombre:"Taza carteles",
@@ -54,10 +54,49 @@ let productos=[
     descripcion:"Mousepad con el mapa del mundo del anime y con el emblema de los piratas de sombrero de paja"}
        
 ]
+
+//Cro la referencia al componente padre
+//Creo una variable para almacenar la base
+//Sobre la cual voy a pintar
+let fila=document.getElementById("fila")
+
+
 //Recorriendo un arreglo con js
 //Buscar/Seleccionar/Esculcar
     productos.forEach(function(producto){
-        console.log("Nacional es el mejor")
+        console.log(producto.nombre)
+        console.log(producto.precio)
+        console.log(producto.foto)
+        //Receta para pintar con js
+
+        //1. Comience a crear la estructura que necesite
+
+        //Creo la columna
+        let columna=document.createElement("div")
+        columna.classList.add("col")
+
+        //Creo la tarjeta
+        let tarjeta=document.createElement("div")
+        tarjeta.classList.add("card")
+        tarjeta.classList.add("h-100")
+        
+        //Creo la imagen
+        let foto=document.createElement("img")
+        foto.classList.add("card-img-top")
+        foto.src= producto.foto
+
+        //2. Ordenar la estructura
+        //Padres e hijos
+
+        tarjeta.appendChild(foto)
+        columna.appendChild(tarjeta)
+        fila.appendChild(columna)
+
+        //Creo el documento
+        let titulo=document.createElement("h5")
+        titulo.classList.add("card-title")
+        titulo.src=producto.nombre
+
     })
 
 //Escuchando clic en el boton
@@ -72,4 +111,5 @@ function cambiarFoto() {
     // foto.src="imagenesTienda/Producto4.jpg"
 
 }
+
 
