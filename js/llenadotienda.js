@@ -5,38 +5,38 @@
 let productos=[
     {nombre:"Funko pop luffy",
     precio:70000,
-    foto:'imagenesTienda/Producto1.jpg',
+    foto:'../imagenesTienda/Producto1.jpg',
     descripcion:"Figura de luffy en kimono"},
     {
     nombre:"Taza carteles",
     precio:52500,
-    foto: 'imagenesTienda/Producto2.jpg',
+    foto: '../imagenesTienda/Producto2.jpg',
     descripcion:"Taza de carteles de se busca de los integrantes, la cual cambia dependiendo de la temperatura"},
     {
     nombre:"Vasos luffy y ace",
     precio:65800,
-    foto: 'imagenesTienda/Producto3.jpg',
+    foto: '../imagenesTienda/Producto3.jpg',
     descripcion:"Vasos de vidrio con banderas piratas de luffy y ace"},
     {
     nombre:"Billetera",
     precio:87800,
-    foto: 'imagenesTienda/Producto4.jpg',
+    foto: '../imagenesTienda/Producto4.jpg',
     descripcion:"Billetera negra de cuero con bandera pirata de luffy"},
     {
     nombre:"Tazón",
     precio:56900,
-    foto: 'imagenesTienda/Producto5.jpg',
+    foto: '../imagenesTienda/Producto5.jpg',
     descripcion:"Tazon negro con interior rojo el cual tiene la bandera de luffy"},
     {
     nombre:"Cojín",
     precio:87800,
-    foto: 'imagenesTienda/Producto6.jpg',
+    foto: '../imagenesTienda/Producto6.jpg',
     descripcion:"Cojín negro Con el emblema pirata"},
     {
     nombre:"Llavero",
     precio:43900,
-    foto: 'imagenesTienda/Producto7.jpg',
-    descripcion:"Llavero one piece piratas sel sombrero de paja"},
+    foto: '../imagenesTienda/Producto7.jpg',
+    descripcion:"Llavero one piece piratas del sombrero de paja"},
     {
     nombre:"Platos",
     precio:109850,
@@ -45,17 +45,17 @@ let productos=[
     {
     nombre:"Termo",
     precio:56900,
-    foto: 'imagenesTienda/Producto9.jpg',
+    foto: '../imagenesTienda/Producto9.jpg',
     descripcion:"Termo de viaje negro para poder llevar liquidos a cualquier lugar"},
     {
     nombre:"Mousepad",
     precio:87800,
-    foto: 'imagenesTienda/Producto10.jpg',
+    foto: '../imagenesTienda/Producto10.jpg',
     descripcion:"Mousepad con el mapa del mundo del anime y con el emblema de los piratas de sombrero de paja"}
        
 ]
 
-//Cro la referencia al componente padre
+//Creo la referencia al componente padre
 //Creo una variable para almacenar la base
 //Sobre la cual voy a pintar
 let fila=document.getElementById("fila")
@@ -64,9 +64,11 @@ let fila=document.getElementById("fila")
 //Recorriendo un arreglo con js
 //Buscar/Seleccionar/Esculcar
     productos.forEach(function(producto){
-        console.log(producto.nombre)
-        console.log(producto.precio)
         console.log(producto.foto)
+        console.log(producto.nombre)
+        console.log(producto.descripcion)
+        console.log(producto.precio)
+
         //Receta para pintar con js
 
         //1. Comience a crear la estructura que necesite
@@ -85,17 +87,45 @@ let fila=document.getElementById("fila")
         foto.classList.add("card-img-top")
         foto.src= producto.foto
 
+        //Cuerpo del producto
+        let cuerpoProducto = document.createElement("div")
+        cuerpoProducto.classList.add("card-body")        
+
+        //Agrego el nombre
+        let nombre=document.createElement("h5")
+        nombre.classList.add("card-title")
+        nombre.textContent = producto.nombre
+
+        //Agrego la descripción del producto
+        let descripcion=document.createElement("p")
+        descripcion.classList.add("card-text")
+        descripcion.textContent= producto.descripcion
+
+        //Agrego el precio
+        let precio=document.createElement("h5")
+        precio.classList.add("card-tittle")
+        precio.textContent= producto.precio
+
         //2. Ordenar la estructura
         //Padres e hijos
 
         tarjeta.appendChild(foto)
         columna.appendChild(tarjeta)
         fila.appendChild(columna)
+        tarjeta.appendChild(cuerpoProducto)
+        cuerpoProducto.appendChild(nombre)
+        cuerpoProducto.appendChild(descripcion)
+        cuerpoProducto.appendChild(precio)
 
-        //Creo el documento
-        let titulo=document.createElement("h5")
-        titulo.classList.add("card-title")
-        titulo.src=producto.nombre
+        // let titulo=document.getElementById("nombre")
+        // titulo=document.write=(producto.nombre)
+
+
+        // nombre.appendChild(fila)
+        // descripcion.appendChild(nombre)
+        // precio.appendChild(descripcion)
+        
+
 
     })
 
@@ -103,12 +133,12 @@ let fila=document.getElementById("fila")
 let boton=document.getElementById("boton")
 
 //Detectando el primer evento
-boton.addEventListener("click",cambiarFoto)
+// boton.addEventListener("click",cambiarFoto)
 
 //Creando una función
 function cambiarFoto() {
     let foto= document.getElementById("fotoPrueba")
-    // foto.src="imagenesTienda/Producto4.jpg"
+    // foto.src="../imagenesTienda/Producto4.jpg"
 
 }
 

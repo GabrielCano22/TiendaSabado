@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'ONE-PIECE';
+    src:url(../ONE-PIECE.ttf.woff) format('woff'),
+        url(../ONE-PIECE.ttf.svg#ONE-PIECE) format('svg'),
+        url(../ONE-PIECE.ttf.eot),
+        url(../ONE-PIECE.ttf.eot?#iefix) format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+#num1{
+    font-family:ONE-PIECE;
+    font-size: 3.5em;
+}
+#links{
+    background-color: rgb(228, 79, 79);
+    border-radius: 1em;
+    padding-left: auto;
+    color: rgb(0, 0, 0);
+    width: auto;
+    background-image: url(../img/OpcionNav.gif);
+    background-size: cover;
+    box-shadow: 0 0 6px 0 rgb(0, 255, 255);
+}
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 160;
+}
+
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+h4{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+#tipofruta{
+    height: 60%;
+    width: 100%;
+}
+
+#Tipos div{
+    text-align: center;
+    box-shadow: 0 0 6px 0 rgb(0, 0, 0);
+
+}
+
+#btn{
+    width: 80%;
+    height: 10%;
+}
+#cuadro{
+    box-shadow: 0 0 6px 0 rgb(0, 0, 0);
+}
+
+#tipohaki{
+    height: 45%;
+    width: 80%;
+}

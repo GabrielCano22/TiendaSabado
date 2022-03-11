@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'ONE-PIECE';
+    src:url(../ONE-PIECE.ttf.woff) format('woff'),
+        url(../ONE-PIECE.ttf.svg#ONE-PIECE) format('svg'),
+        url(../ONE-PIECE.ttf.eot),
+        url(../ONE-PIECE.ttf.eot?#iefix) format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+#num1{
+    font-family:ONE-PIECE;
+    font-size: 3.5em;
+}
+#links{
+    background-color: rgb(228, 79, 79);
+    border-radius: 1em;
+    padding-left: auto;
+    color: rgb(0, 0, 0);
+    width: auto;
+    background-image: url(../img/OpcionNav.gif);
+    background-size: cover;
+    box-shadow: 0 0 6px 0 rgb(0, 255, 255);
+}
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     background-image: url(https://www.xtrafondos.com/descargar.php?id=4011&resolucion=1920x1080); 
+    background-attachment: fixed;
+    background-size: cover;
+      
+}
+h4{
+    text-align: center;
+    font-size: 35px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+#img-texto{
+    font-size: 110%;
+}
+
+#agrupar{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border-radius: 2em;
+}
+
+#spideramongus{
+    padding: 50px;
+    border-radius: 1.5em;
+    height: 90%;
+}
