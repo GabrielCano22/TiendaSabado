@@ -1,6 +1,7 @@
 body{
     background-image: url(../imagenesTienda/OpcionFondo1.jpg);
     background-size: cover;
+    background-attachment: fixed;
     color: black;
 }
 @font-face {
@@ -31,12 +32,67 @@ body{
     width: auto;
     background-image: url(../img/OpcionNav.gif);
     background-size: cover;
-    box-shadow: 0 0 6px 0 rgb(0, 255, 255);
+    box-shadow: 0 0 60px 0 rgb(0, 255, 255);
 }
 
     #fila div{
     text-align: center;
-    box-shadow: 0 0 6px 0 rgb(0, 255, 255);
+    box-shadow: 0 0 15px 0 rgb(255, 0, 0);
+}
+
+#fila button{
+    width: 50%;
+    
+}
+#barco{
+    width: 50%;
+    height: 50%;
+}
+footer{
+    text-align: center;
+    /* background-color: rgb(243, 247, 250); */
+    flex-wrap: wrap;
+    background-color: rgba(226, 226, 226, 0.746);
+}
+.segundomenu li{
+    list-style: none;
+    background: #EAECEE;
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+
+#facebook{
+    width: 27px;
+    height: 18px;
+    object-position: center;
+
+}
+
+#twitter{
+    width: 27px;
+    height: 18px;
+    object-position: center;
+}
+
+#instagram{
+    width: 27px;
+    height: 18px;
+    object-position: center;
+
+}
+
+#whatsapp{
+    width: 27px;
+    height: 18px;
+    object-position: center;
+
+}
+nav{
+    background-image: url(../img/PruebaNav.png);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
     

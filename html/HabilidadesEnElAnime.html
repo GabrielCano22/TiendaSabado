@@ -81,7 +81,7 @@
             </div>
             <div class="container mt-3">
                 <Div class="row" id="Tipos">
-                    <div class="col-4">
+                    <div class="col-4" id="paramecia">
                         <h3>Paramecia</h3>
                         <p>Éstas frutas dan al consumidor un poder que puede afectar tanto a su cuerpo, como a la manipulación del entorno o la generación de algunas sustancias. </p>
                         <img src="../Habilidades/Paramecia.png" alt="Gomu gomu no mi" id="tipofruta"><br><br><br><br>
@@ -89,7 +89,7 @@
                             Ver fruta en uso
                           </button>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4" id="logia">
                         <h3>Logia</h3>
                         <p>Una fruta del diablo de tipo logia se caracteriza por brindar a sus consumidores la capacidad de crear, controlar y transformar su cuerpo en un elemento natural. </p>
                         <img src="../Habilidades/Logia.png" alt="Mera mera no mi" id="tipofruta"><br><br><br><br>
@@ -97,7 +97,7 @@
                             Ver fruta en uso
                           </button>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4" id="zoan">
                         <h3>Zoan</h3>
                         <p>Este tipo de fruta permite al consumidor transformarse en una especie de animal completo y una forma híbrida del animal y su forma original a completa voluntad. </p>
                         <img src="../Habilidades/Zoan.png" alt="Fruta jirafa" id="tipofruta"><br><br><br><br>
@@ -112,6 +112,85 @@
             </div>
 
             <br><br>
+            <section>
+              <div class="modal fade" id="modalfrutas" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Gomu gomu no mi</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container">
+                        <div class="row">
+                          <div >
+                            <P>Portador: Monkey D Luffy</P>
+                            <img src="../Habilidades/GomuGomuNoMi.gif" alt="FrutaLuffy" srcset="">
+        
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="modal fade" id="modalmera" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Mera Mera No Mi</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container">
+                        <div class="row">
+                          <div >
+                            <P>Portadores: Portgas D. Ace - Sabo</P>
+                            <img src="../Habilidades/MeraMeraNoMi.gif" alt="FrutaAce" id="giffruta">
+        
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section>
+              <div class="modal fade" id="modalzoan" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Ushi Ushi: modelo Jirafa</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="container">
+                        <div class="row">
+                          <div >
+                            <P>Portador: Kaku</P>
+                            <img src="../Habilidades/UshiUshiNoMi.gif" alt="Frutakaku" srcset="" id="giffruta">
+        
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+        
              <div class="container mt-2">
                 <Div class="row" id="cuadro">
                     <div class="col-8 align-self-center">
@@ -156,32 +235,57 @@
                 </Div>
                 
             </div>
-
-
         </section>
-                    <section>
-                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                            <div class="offcanvas-header">
-                              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Registro</h5>
-                              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-                              <div>
-                                Si usted desea saber que pirata es, registrese.
-                              </div>
-                              <div class="dropdown mt-3">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-                                  Here
-                                </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <li><a class="dropdown-item" href="#">Action</a></li>
-                                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                    </section>
     </div>
+    <script src="../js/habilidades.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
+<br>
+<footer>
+  <br><br>
+  <section>
+    <div class="container mt-4">
+      <Div class="row">
+        <div class="col-3" id="copyYfoto">
+            <img src="../footer/Sunny.png" alt="BarcoTripulacion" id="barco">
+            <br><br>
+            <p class="text-muted">© created by Gabriel Jaime Cano Oquendo - 2022</p>
+        </div>
+        <br>
+        <div class="col-3" id="info">
+          <h5 id="titulo">Página para ver el anime</h5>
+          <ul class="nav flex-column" id="link1">
+            <li><a href="https://www.instagram.com/one_piece_capitulos_/">one_piece_capitulos_</a></li>   
+          </ul>
+        </div>
+        <div class="col-3" id="info">
+          <h5 id="titulo">Bibliografia</h5>
+          <ul class="nav flex-column" id="link2">
+            <li><a href="https://onepiece.fandom.com/wiki/Monkey_D._Luffy">Onepiece.fandom</a></li>
+            <li><a href="https://www.ecured.cu/One_Piece_(Anime)">Ecured.cu</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/One_Piece">Wikipedia</a></li>
+          </ul>
+        </div>
+        <div class="col-3" id="info">
+          <h5 id="titulo">Contacto con programador</h5>
+          <ul class="nav flex-column">
+            <p>Correo electrónico: gabrieljaimecanooquendo@gmail.com</p>
+            <p>Teléfono celular: 3122093137</p>
+            <ul class="segundomenu">
+              <li><img src="../img/Iconos/facebook.png" alt="icono de facebook" id="facebook"> <a href="https://www.facebook.com/gabrieljaime.canooquendo">Facebook</a> </li>
+               <li><img src="../img/Iconos/twitter.png" alt="icono de Twitter" id="twitter"> <a href="https://twitter.com/Gabriel_Cano_">Twitter</a>  </li> 
+              <li> <img src="../img/Iconos/Instagram.png" alt="icono de instagram" id="instagram"> <a href="https://www.instagram.com/_gabriel_cano_/">Instagram</a></li>
+               <li> <img src="../img/Iconos/whatsapp.png" alt="icono de whatsapp" id="whatsapp"> 
+              <a href="https://wa.me/3122093137"> Whatsapp</a></li>
+          </ul>    
+          </ul>
+      
+        </div>
+
+
+      </Div>
+    </div>
+  </section>
+
+</footer>
 </html>

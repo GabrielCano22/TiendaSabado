@@ -74,21 +74,19 @@ footer{
     text-align: center;
     /* background-color: rgb(243, 247, 250); */
     flex-wrap: wrap;
-    
+    background-color: rgba(226, 226, 226, 0.746);
 }
+
+
 
 .col{
     text-align: center;
     flex-wrap: wrap;
 }
 
-#fotoMia{
-    width: 24%;
-    height: 64%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 3em;
-    box-shadow: 0 0 6px 0 rgb(0, 255, 255);
+#barco{
+    width: 50%;
+    height: 50%;
 }
 
 #link1{
@@ -122,6 +120,11 @@ footer{
     width: auto;
     background-image: url(../img/OpcionNav.gif);
     background-size: cover;
-    box-shadow: 0 0 6px 0 rgb(0, 255, 255);
+    box-shadow: 0 0 60px 0 rgb(0, 255, 255);
 }
 
+nav{
+    background-image: url(../img/PruebaNav.png);
+    background-size: cover;
+    background-attachment: fixed;
+}

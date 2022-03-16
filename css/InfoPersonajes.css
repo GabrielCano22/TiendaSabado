@@ -20,7 +20,7 @@
     width: auto;
     background-image: url(../img/OpcionNav.gif);
     background-size: cover;
-    box-shadow: 0 0 6px 0 rgb(0, 255, 255);
+    box-shadow: 0 0 60px 0 rgb(0, 255, 255);
 }
 body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -77,7 +77,7 @@ body{
     background-color: white;
 
 }
-#Jinbe{
+#Jimbe{
     box-shadow: 0 0 6px 0 rgb(0, 47, 255);
     background-color: white;
 
@@ -121,4 +121,130 @@ h4{
     width: 960px;
     margin-left: auto;
     margin-right: auto;
+}
+#modalzoro{
+    text-align: center;
+    font-size: 20px;
+}
+#fotoZoro{
+    width: 50%;
+    height: 63%; 
+
+}
+#modalsanji{
+    text-align: center;
+    font-size: 20px;
+}
+#fotoSanji{
+    width: 50%;
+    height: 60%; 
+
+}
+#modalnami{
+    text-align: center;
+    font-size: 20px;
+}
+#fotonami{
+    width: 50%;
+    height: 60%; 
+
+}
+#modalusopp{
+    text-align: center;
+    font-size: 20px;
+}
+#fotousopp{
+    width: 50%;
+    height: 60%; 
+
+}
+#modalchopper{
+    text-align: center;
+    font-size: 20px;
+}
+#fotoChopper{
+    width: 50%;
+    height: 60%; 
+
+}
+#modalrobin{
+    text-align: center;
+    font-size: 20px;
+}
+#modalfranky{
+    text-align: center;
+    font-size: 20px;
+}
+#fotoFranky{
+    width: 50%;
+    height: 60%; 
+
+}
+#modalbrook{
+    text-align: center;
+    font-size: 20px;
+}
+#fotoBrook{
+    width: 50%;
+    height: 60%; 
+
+}
+#modaljimbe{
+    text-align: center;
+    font-size: 20px;
+}
+#fotoJimbe{
+    width: 50%;
+    height: 60%; 
+
+}
+#barco{
+    width: 50%;
+    height: 50%;
+}
+footer{
+    text-align: center;
+    /* background-color: rgb(243, 247, 250); */
+    flex-wrap: wrap;
+    background-color: rgba(226, 226, 226, 0.746);
+}
+.segundomenu li{
+    list-style: none;
+    background: #EAECEE;
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+
+#facebook{
+    width: 27px;
+    height: 18px;
+    object-position: center;
+
+}
+
+#twitter{
+    width: 27px;
+    height: 18px;
+    object-position: center;
+}
+
+#instagram{
+    width: 27px;
+    height: 18px;
+    object-position: center;
+
+}
+
+#whatsapp{
+    width: 27px;
+    height: 18px;
+    object-position: center;
+
+}
+nav{
+    background-image: url(../img/PruebaNav.png);
+    background-size: cover;
+    background-attachment: fixed;
 }
