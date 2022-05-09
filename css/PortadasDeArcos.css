@@ -62,36 +62,36 @@ footer{
 }
 .segundomenu li{
     list-style: none;
-    background: #EAECEE;
     list-style: none;
     display: inline-block;
     text-decoration: none;
-    
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #facebook{
-    width: 27px;
-    height: 18px;
+    width: 20px;
+    /* height: 18px; */
     object-position: center;
 
 }
 
 #twitter{
-    width: 27px;
-    height: 18px;
+    width: 20px;
+    /* height: 18px; */
     object-position: center;
 }
 
 #instagram{
-    width: 27px;
-    height: 18px;
+    width: 20px;
+    /* height: 18px; */
     object-position: center;
 
 }
 
 #whatsapp{
-    width: 27px;
-    height: 18px;
+    width: 20px;
+    /* height: 18px; */
     object-position: center;
 
 }
@@ -99,4 +99,13 @@ nav{
     background-image: url(../img/PruebaNav.png);
     background-size: cover;
     background-attachment: fixed;
+}
+
+#infoFooter{
+    text-decoration: none;
+    color: black;
+
+}
+#infoFooter:hover{
+    color: rgb(0, 162, 255);
 }

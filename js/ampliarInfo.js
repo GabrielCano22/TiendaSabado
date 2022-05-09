@@ -19,6 +19,9 @@ export function ampliarInformacion(event) {
         descripcion.textContent = producto.descripcion
         let precio = document.getElementById("precioinfo")
         precio.textContent = producto.precio
+
+        return producto
+        
     }
 
 }

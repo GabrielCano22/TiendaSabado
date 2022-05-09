@@ -44,7 +44,7 @@ h4{
 
 #Tipos div{
     text-align: center;
-    box-shadow: 0 0 6px 0 rgb(0, 0, 0);
+    box-shadow: 0 0 4px 0 rgb(0, 0, 0);
 
 }
 
@@ -54,7 +54,7 @@ h4{
     font-size: 25px;
 }
 #cuadro{
-    box-shadow: 0 0 6px 0 rgb(0, 0, 0);
+    box-shadow: 0 0 4px 0 rgb(0, 0, 0);
 }
 
 #tipohaki{
@@ -78,36 +78,36 @@ footer{
 }
 .segundomenu li{
     list-style: none;
-    background: #EAECEE;
     list-style: none;
     display: inline-block;
     text-decoration: none;
-    
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #facebook{
-    width: 27px;
-    height: 18px;
+    width: 20px;
+    /* height: 18px; */
     object-position: center;
 
 }
 
 #twitter{
-    width: 27px;
-    height: 18px;
+    width: 20px;
+    /* height: 18px; */
     object-position: center;
 }
 
 #instagram{
-    width: 27px;
-    height: 18px;
+    width: 20px;
+    /* height: 18px; */
     object-position: center;
 
 }
 
 #whatsapp{
-    width: 27px;
-    height: 18px;
+    width: 20px;
+    /* height: 18px; */
     object-position: center;
 
 }
@@ -115,4 +115,12 @@ nav{
     background-image: url(../img/PruebaNav.png);
     background-size: cover;
     background-attachment: fixed;
+}
+#infoFooter{
+    text-decoration: none;
+    color: black;
+
+}
+#infoFooter:hover{
+    color: rgb(0, 162, 255);
 }

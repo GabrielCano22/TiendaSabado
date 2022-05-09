@@ -61,10 +61,7 @@ export function pintarTienda() {
     //Recorriendo un arreglo con js
     //Buscar/Seleccionar/Esculcar
         productos.forEach(function(producto){
-          /*  console.log(producto.foto)
-            console.log(producto.nombre)
-            console.log(producto.descripcion)
-            console.log(producto.precio)*/
+
     
             //Receta para pintar con js
     
@@ -101,7 +98,7 @@ export function pintarTienda() {
             //Agrego el precio
             let precio=document.createElement("h4")
             precio.classList.add("card-tittle")
-            precio.textContent= producto.precio
+            precio.textContent=producto.precio
             
 
             //Creando un botón
@@ -110,10 +107,6 @@ export function pintarTienda() {
             boton.classList.add("btn","btn-primary","mx-4","mb-4")
             boton.textContent = "Ver Producto"
 
-            let buton = document.createElement("button")
-            buton.setAttribute("type","button")
-            buton.classList.add("btn","btn-success","mx-4","mb-4")
-            buton.textContent = "Comprar"
             //2. Ordenar la estructura
             //Padres e hijos
     
@@ -124,17 +117,7 @@ export function pintarTienda() {
             cuerpoProducto.appendChild(nombre)
             cuerpoProducto.appendChild(descripcion)
             cuerpoProducto.appendChild(precio)
-            cuerpoProducto.appendChild(boton),cuerpoProducto.appendChild(buton)
-            
-
-    
-            // let titulo=document.getElementById("nombre")
-            // titulo=document.write=(producto.nombre)
-    
-    
-            // nombre.appendChild(fila)
-            // descripcion.appendChild(nombre)
-            // precio.appendChild(descripcion)
+            cuerpoProducto.appendChild(boton)
             
     
     
@@ -149,7 +132,6 @@ export function pintarTienda() {
     //Creando una función
     function cambiarFoto() {
         let foto= document.getElementById("fotoPrueba")
-        // foto.src="../imagenesTienda/Producto4.jpg"
     
     }
     

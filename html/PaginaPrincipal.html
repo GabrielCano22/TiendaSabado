@@ -11,6 +11,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   <link rel="stylesheet" href="../css/Style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 <body class="principal">
   <div>
@@ -38,36 +39,23 @@
                   <li class="nav-item">
                     <a class="nav-link" href="InfoCreadorDelAnime.html" id="links">Info creador del anime</a>
                   </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Consultas
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="#">Actualizar</a></li>
-                      <li><a class="dropdown-item" href="#">Dirigir</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Borrar</a></li>
-                    </ul>
-                  </li>
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="Tienda.html" id="links">Tienda</a>
                   </li>
                 </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Consultar" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
               </div>
+              <ul class="navbar-nav dropdown  me-auto mb-2 mb-lg-0 ml-auto " id="navbarSupportedContent">
+                <h4 id="bienvenidauser" class="nav-link ml-auto ">                 
+                </h4>
             </div>
           </nav>
-        <!-- <h1 class="animate__animated animate__bounce">Hola muchachos</h1> -->
     </header>
 
     <main>
         <img src="../img/Fondo.jpg" alt="One piece" class="img-fluid w-100" id="fotoPrueba">
     </main>
 
-    <!-- section donde está el texto y el amongus -->
+    <!-- section donde está el texto y el personaje -->
     <section>
         <div class="container mt-2">
             <Div class="row">
@@ -91,14 +79,12 @@
     </section>
 
     <!-- section donde esta la imagen que se mueve -->
-    <!-- <section class="FondoTrasero">
-       <img src="img/LuffySerio.jpg" alt="" class="img-fluid w-100" id="FondoTrasero"> -->
     </section>
      <section class="FondoTrasero">
         
     </section> 
 
-    <!-- section donde esta el texto describiendo al spiderman -->
+    <!-- section donde esta el texto describiendo al personaje -->
     <section>
         <div class="container mt-5 mb-5">
             <div class="row">
@@ -132,28 +118,31 @@
             </div>
             <div class="offcanvas-body">
               <div>
-                Si usted desea saber que pirata es, registrese.
+                Si usted desea saber qué pirata es, registrese.
               </div>
               <div class="dropdown mt-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
-                  Here
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                
+                <form id="formularioregistro"> 
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Correo</label>
+                    <input type="email" class="form-control" id="correo">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password">
+                  </div>
+                  <button type="submit" class="btn btn-primary" id="botonregistro">Enviar</button>
+                  <button type="button" class="btn btn-danger" id="botonLimpiar">Limpiar</button>
+
+                </form>
+
               </div>
             </div>
           </div>
     </section>
 
-    <!-- <section >
-      <h1 id="titulo">Hola cómo estás</h1>
-    </section> -->
-
-
-
+    <script src="../js/registro.js" type="module"></script>
+    <script src="../js/firebase.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
@@ -172,28 +161,29 @@
         <div class="col-3" id="info">
           <h5 id="titulo">Página para ver el anime</h5>
           <ul class="nav flex-column" id="link1">
-            <li><a href="https://www.instagram.com/one_piece_capitulos_/">one_piece_capitulos_</a></li>   
+            <li><a href="https://www.instagram.com/one_piece_capitulos_/" id="infoFooter">one_piece_capitulos_</a></li>   
           </ul>
         </div>
         <div class="col-3" id="info">
           <h5 id="titulo">Bibliografia</h5>
           <ul class="nav flex-column" id="link2">
-            <li><a href="https://onepiece.fandom.com/wiki/Monkey_D._Luffy">Onepiece.fandom</a></li>
-            <li><a href="https://www.ecured.cu/One_Piece_(Anime)">Ecured.cu</a></li>
-            <li><a href="https://es.wikipedia.org/wiki/One_Piece">Wikipedia</a></li>
+            <li><a href="https://onepiece.fandom.com/wiki/Monkey_D._Luffy" id="infoFooter">Onepiece.fandom</a></li>
+            <li><a href="https://www.ecured.cu/One_Piece_(Anime)" id="infoFooter">Ecured.cu</a></li>
+            <li><a href="https://es.wikipedia.org/wiki/One_Piece" id="infoFooter">Wikipedia</a></li>
           </ul>
         </div>
         <div class="col-3" id="info">
-          <h5 id="titulo">Contacto con programador</h5>
+          <h5 id="titulo" >Contacto con programador</h5>
           <ul class="nav flex-column">
             <p>Correo electrónico: gabrieljaimecanooquendo@gmail.com</p>
             <p>Teléfono celular: 3122093137</p>
             <ul class="segundomenu">
-              <li><img src="../img/Iconos/facebook.png" alt="icono de facebook" id="facebook"> <a href="https://www.facebook.com/gabrieljaime.canooquendo">Facebook</a> </li>
-               <li><img src="../img/Iconos/twitter.png" alt="icono de Twitter" id="twitter"> <a href="https://twitter.com/Gabriel_Cano_">Twitter</a>  </li> 
-              <li> <img src="../img/Iconos/Instagram.png" alt="icono de instagram" id="instagram"> <a href="https://www.instagram.com/_gabriel_cano_/">Instagram</a></li>
+              <li><img src="../img/Iconos/facebook.png" alt="icono de facebook" id="facebook"> <a href="https://www.facebook.com/gabrieljaime.canooquendo" id="infoFooter">Facebook</a> </li>
+               <li><img src="../img/Iconos/twitter.png" alt="icono de Twitter" id="twitter"> <a href="https://twitter.com/Gabriel_Cano_" id="infoFooter">Twitter</a>  </li> 
+               <br>
+              <li> <img src="../img/Iconos/Instagram.png" alt="icono de instagram" id="instagram"> <a href="https://www.instagram.com/_gabriel_cano_/" id="infoFooter" >Instagram</a></li>
                <li> <img src="../img/Iconos/whatsapp.png" alt="icono de whatsapp" id="whatsapp"> 
-              <a href="https://wa.me/3122093137"> Whatsapp</a></li>
+              <a href="https://wa.me/+573122093137" id="infoFooter"> Whatsapp</a></li>
           </ul>    
           </ul>
       
@@ -205,5 +195,27 @@
   </section>
 
 </footer>
+<section>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalinformativo">
+          Launch demo modal
+        </button>
+
+        <div class="modal fade" id="modalinformativo" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modalinformativoLabel">Tienda One Piece</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p id="informaciongeneral"></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
 </html>
 
