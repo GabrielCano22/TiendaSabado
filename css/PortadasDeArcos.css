@@ -13,7 +13,9 @@
     font-size: 3.5em;
 }
 
-
+.nav-link{
+    margin-left: 15px;
+}
 
 h2{
     background-color: white;
@@ -35,14 +37,17 @@ body{
 }
 
 #links{
-    background-color: rgb(228, 79, 79);
-    border-radius: 1em;
+    
+    border-radius: 0.4em;
     padding-left: auto;
     color: rgb(0, 0, 0);
     width: auto;
     background-image: url(../img/OpcionNav.gif);
     background-size: cover;
     box-shadow: 0 0 60px 0 rgb(0, 255, 255);
+}
+#links:hover{
+    color: white;
 }
 
 #contenedor{

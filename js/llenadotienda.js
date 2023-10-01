@@ -104,9 +104,16 @@ export function pintarTienda() {
             //Creando un botón
             let boton = document.createElement("button")
             boton.setAttribute("type","button")
-            boton.classList.add("btn","btn-primary","mx-4","mb-4")
+            boton.classList.add("btn","btn-outline-info","mx-4","mb-4")
             boton.textContent = "Ver Producto"
 
+            //Creando separador entre precios y botón
+            let separador = document.createElement("hr")
+            separador.classList.add("card-title")
+
+            //Creando espacio
+            let espaciado = document.createElement("br")
+            espaciado.classList.add("card-tittle")
             //2. Ordenar la estructura
             //Padres e hijos
     
@@ -117,29 +124,11 @@ export function pintarTienda() {
             cuerpoProducto.appendChild(nombre)
             cuerpoProducto.appendChild(descripcion)
             cuerpoProducto.appendChild(precio)
+            cuerpoProducto.appendChild(espaciado)
+            cuerpoProducto.appendChild(separador)
             cuerpoProducto.appendChild(boton)
             
     
     
         })
-    
-    //Escuchando clic en el boton
-    let boton=document.getElementById("boton")
-    
-    //Detectando el primer evento
-    // boton.addEventListener("click",cambiarFoto)
-    
-    //Creando una función
-    function cambiarFoto() {
-        let foto= document.getElementById("fotoPrueba")
-    
-    }
-    
-    
-    
 }
-
-//Arreglo de objetos
-
-//Adjuntar la informacion de 10 productos asociados a la tienda
-

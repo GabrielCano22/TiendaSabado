@@ -25,7 +25,7 @@ botonregistro.addEventListener("click",function(evento){
         formulario.reset()
               user.email
         bienvenido.classList.remove("invisible")
-        bienvenido.innerHTML=`bienvenido: ${user.email}<i class="bi bi-person-video" id="icono"></i>`
+        bienvenido.innerHTML=`Bienvenido: ${user.email}  <i class="bi bi-person-video" id="icono"></i>`
         textoinformativo.textContent = "Exito registrandote"
         modalInformativo.show()
         console.log("El registro ha sido un exito")

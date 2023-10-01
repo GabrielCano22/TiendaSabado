@@ -3,7 +3,6 @@ let contenedorFrutas = document.getElementById("paramecia")
 contenedorFrutas.addEventListener("click",function (event){
 
      if(event.target.classList.contains("btn")){
-          console.log("Estoy haciendo clic en el boton")
           let modalfrutas = new bootstrap.Modal(document.getElementById('modalfrutas'))
           modalfrutas.show()
       }
